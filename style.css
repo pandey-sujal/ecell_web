@@ -1,0 +1,150 @@
+body, h1, h2, p {
+    margin: 0;
+padding: 0;
+background-color:rgb(223, 207, 190);
+}
+.logo {
+    padding: 0px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+}
+
+.logo img {
+    max-height: 190px;
+    align-items: left;
+    
+}
+
+nav {
+background-color: #3498DB;
+color:white;
+padding: 50px 0;
+text-align: right;
+font-size: 18px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 1);
+transition: transform 0.3s;
+}
+nav ul li a:hover  {
+    transform: scale(1.2); 
+}
+nav ul {
+list-style-type: none;
+}
+
+nav ul li  {
+display: inline;
+margin-right: 20px;
+
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 25px;
+    padding-right: 5px;
+    margin-right: 10px;
+    gap: 20px;
+    color: #ffffff;
+    transition: transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+    transform: scale(1.2); 
+}
+.wrap1{
+    margin:0 auto;
+}
+
+.body {
+display: flex;
+justify-content:space-between;
+align-items: center;
+padding: 120px;
+}
+
+.box1, .box2, #box3 {
+border-radius: 12px;
+height: 380px;
+width: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 5);
+}
+
+.box1 {
+background: linear-gradient(-45deg, #3300ff,#fa00ff);
+}
+
+.box2 {
+border: solid black 1px;
+background-color: white;
+}
+
+#box3 {
+border: solid black 1px;
+background-color:white;
+}
+
+img {
+width: 80%;
+height: 80%;
+border-radius: 12px;
+}
+
+.boxcs {
+height: 100px;
+width: 100px;
+margin: 15px;
+border-radius: 10px;
+background-color : #00407A;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 5);
+
+}
+
+.boxcs:hover {
+background-color: red;
+}
+
+@media only screen and (max-width: 1330px){
+   
+    .wrap1{
+        margin-left: 10px auto;
+        margin-right:10px auto;
+    }
+    .body{
+        flex-wrap:wrap;
+    }
+    .box1{
+        width: 100%;
+    }
+
+    }
+
+ @media only screen and (max-width: 920){
+        .wrap1{
+            margin-left: 10px auto;
+            margin-right:10px auto;
+        }
+        .body{
+            flex-wrap:wrap;
+        }
+        .box1{
+            width: calc(50% -20%);
+        }
+        nav ul {
+            display: grid; 
+            grid-template-columns: 1fr; 
+            grid-gap: 10px;
+            text-align: center; 
+        }
+    
+        nav ul li {
+            display: none; 
+        }
+        }
+      
